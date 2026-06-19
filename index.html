@@ -60,6 +60,21 @@
     .eyebrow { color: var(--accent); font-weight: 700; letter-spacing: .12em; font-size: 12px; text-transform: uppercase; }
     h1 { font-size: clamp(30px, 5vw, 56px); line-height: 1.02; margin: 12px 0 14px; }
     .subtitle { color: var(--muted); font-size: 16px; max-width: 720px; }
+    .data-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+      color: #c7d2fe;
+      font-size: 14px;
+    }
+    .data-meta span {
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(56,189,248,.10);
+      border: 1px solid rgba(56,189,248,.24);
+    }
+    .data-meta b { color: var(--text); }
     .rules { padding: 24px; display: grid; gap: 14px; }
     .rule {
       display: flex; justify-content: space-between; align-items: center;
@@ -132,6 +147,10 @@
         <div class="eyebrow">Stock Screener · Volume / Price / KD</div>
         <h1>量價 KD 股票篩選系統</h1>
         <p class="subtitle">自動找出「成交量比昨日多 1 倍以上、價格比昨日上漲 3% 以上、KD 小於 40」的股票。資料來源改為參考 tw-stocks 專案：前端讀取 <b>data.json</b>，後端腳本用 TWSE + yfinance 產生。</p>
+        <div class="data-meta" aria-label="資料更新資訊">
+          <span>資料日期：<b id="dataDate">—</b></span>
+          <span>更新時間：<b id="updatedTime">—</b></span>
+        </div>
       </section>
       <section class="rules card">
         <div class="rule"><span>成交量條件</span><b>今日量 ≥ 昨日量 × 2</b></div>
@@ -191,6 +210,10 @@ function volRatio(row){ return Number(row.volume) / Number(row.prevVolume); }
 function avgKd(row){ return (Number(row.k) + Number(row.d)) / 2; }
 function isHit(row){ return volRatio(row) >= 2 && pct(row) >= 3 && Number(row.k) < 40 && Number(row.d) < 40; }
 function fmt(n, d=1){ return Number(n).toLocaleString('zh-TW', {maximumFractionDigits:d, minimumFractionDigits:d}); }
+function formatDate(dateStr){
+  const s = String(dateStr || '');
+  return /^\d{8}$/.test(s) ? `${s.slice(0,4)}-${s.slice(4,6)}-${s.slice(6,8)}` : (s || '—');
+}
 function toast(msg){ const el=$('#toast'); el.textContent=msg; el.classList.add('show'); setTimeout(()=>el.classList.remove('show'), 2200); }
 function render(){
   const q = $('#search').value.trim().toLowerCase();
@@ -243,10 +266,14 @@ async function loadRemoteData(){
     if (!r.ok) throw new Error('data.json not found');
     const data = await r.json();
     rows = Array.isArray(data.stocks) ? data.stocks : [];
+    $('#dataDate').textContent = formatDate(data.date);
+    $('#updatedTime').textContent = data.updated || '—';
     showAll = false;
     render();
     toast(`已載入 ${data.date || ''} 真實資料：${rows.length} 檔通過`);
   } catch (err) {
+    $('#dataDate').textContent = 'DEMO';
+    $('#updatedTime').textContent = '尚未載入 data.json';
     render();
     toast('尚未找到 data.json，先顯示 DEMO；請執行 python3 scan.py');
   }
