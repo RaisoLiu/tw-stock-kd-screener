@@ -37,5 +37,6 @@ jobs:
             echo "No data changes"
           else
             git commit -m "auto: update stock data"
+            git pull --rebase origin main
             git push
           fi
