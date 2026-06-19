@@ -1,0 +1,80 @@
+{
+  "date": "20260618",
+  "updated": "2026-06-19 18:01",
+  "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
+  "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
+  "stocks": [
+    {
+      "symbol": "2207",
+      "name": "和泰車",
+      "prevClose": 461.5,
+      "price": 482.0,
+      "prevVolume": 947550,
+      "volume": 8781085,
+      "k": 39.41,
+      "d": 38.71,
+      "risePct": 4.44,
+      "volRatio": 9.27
+    },
+    {
+      "symbol": "6934",
+      "name": "心誠鎂",
+      "prevClose": 68.3,
+      "price": 71.3,
+      "prevVolume": 27000,
+      "volume": 208403,
+      "k": 31.78,
+      "d": 29.14,
+      "risePct": 4.39,
+      "volRatio": 7.72
+    },
+    {
+      "symbol": "6224",
+      "name": "聚鼎",
+      "prevClose": 78.6,
+      "price": 85.0,
+      "prevVolume": 903040,
+      "volume": 4119224,
+      "k": 35.69,
+      "d": 24.96,
+      "risePct": 8.14,
+      "volRatio": 4.56
+    },
+    {
+      "symbol": "6924",
+      "name": "榮惠-KY創",
+      "prevClose": 114.0,
+      "price": 125.0,
+      "prevVolume": 17000,
+      "volume": 52626,
+      "k": 15.39,
+      "d": 12.79,
+      "risePct": 9.65,
+      "volRatio": 3.1
+    },
+    {
+      "symbol": "7730",
+      "name": "暉盛-創",
+      "prevClose": 170.5,
+      "price": 180.5,
+      "prevVolume": 48060,
+      "volume": 138784,
+      "k": 27.4,
+      "d": 23.5,
+      "risePct": 5.87,
+      "volRatio": 2.89
+    },
+    {
+      "symbol": "3055",
+      "name": "蔚華科",
+      "prevClose": 86.8,
+      "price": 91.1,
+      "prevVolume": 1054031,
+      "volume": 2907958,
+      "k": 39.41,
+      "d": 22.63,
+      "risePct": 4.95,
+      "volRatio": 2.76
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>量價 KD 股票篩選系統</title>
+  <style>
+    * { box-sizing: border-box; }
+    :root {
+      --bg: #07111f;
+      --panel: rgba(15, 25, 44, 0.78);
+      --panel-2: rgba(23, 37, 62, 0.82);
+      --text: #eaf2ff;
+      --muted: #8ea3bf;
+      --line: rgba(148, 163, 184, 0.22);
+      --accent: #38bdf8;
+      --green: #34d399;
+      --yellow: #fbbf24;
+      --red: #fb7185;
+      --purple: #a78bfa;
+      --shadow: 0 24px 80px rgba(0,0,0,.35);
+      --radius: 22px;
+    }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 10% 10%, rgba(56,189,248,.24), transparent 32%),
+        radial-gradient(circle at 85% 8%, rgba(167,139,250,.2), transparent 28%),
+        linear-gradient(135deg, #050816 0%, #07111f 52%, #091827 100%);
+      padding: 32px;
+    }
+    .app { max-width: 1220px; margin: 0 auto; }
+    header {
+      display: grid;
+      grid-template-columns: 1.35fr .65fr;
+      gap: 20px;
+      align-items: stretch;
+      margin-bottom: 20px;
+    }
+    .hero, .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      border-radius: var(--radius);
+      backdrop-filter: blur(18px);
+    }
+    .hero { padding: 32px; position: relative; overflow: hidden; }
+    .hero:after {
+      content: "";
+      position: absolute;
+      right: -80px; top: -80px;
+      width: 240px; height: 240px;
+      border-radius: 999px;
+      background: rgba(56,189,248,.18);
+      filter: blur(10px);
+    }
+    .eyebrow { color: var(--accent); font-weight: 700; letter-spacing: .12em; font-size: 12px; text-transform: uppercase; }
+    h1 { font-size: clamp(30px, 5vw, 56px); line-height: 1.02; margin: 12px 0 14px; }
+    .subtitle { color: var(--muted); font-size: 16px; max-width: 720px; }
+    .rules { padding: 24px; display: grid; gap: 14px; }
+    .rule {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 14px 16px; border-radius: 16px;
+      background: rgba(255,255,255,.045); border: 1px solid var(--line);
+    }
+    .rule b { font-size: 20px; }
+    .rule span { color: var(--muted); font-size: 13px; }
+    .toolbar {
+      display: grid;
+      grid-template-columns: 1fr auto auto;
+      gap: 12px;
+      padding: 18px;
+      margin-bottom: 20px;
+    }
+    input, button, label.file {
+      height: 44px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(255,255,255,.06);
+      color: var(--text);
+      padding: 0 14px;
+      font: inherit;
+    }
+    input::placeholder { color: #74859d; }
+    button, label.file { cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-weight: 700; }
+    button.primary { background: linear-gradient(135deg, #0ea5e9, #2563eb); border-color: rgba(125,211,252,.55); }
+    button:hover, label.file:hover { transform: translateY(-1px); border-color: rgba(56,189,248,.6); }
+    #csvFile { display: none; }
+    .stats {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 20px;
+    }
+    .stat { padding: 18px; }
+    .stat .num { font-size: 30px; font-weight: 900; margin-top: 6px; }
+    .stat .label { color: var(--muted); font-size: 13px; }
+    .content { display: grid; grid-template-columns: 1fr 340px; gap: 20px; align-items: start; }
+    table { width: 100%; border-collapse: collapse; overflow: hidden; }
+    th, td { padding: 14px 14px; border-bottom: 1px solid var(--line); text-align: right; white-space: nowrap; }
+    th:first-child, td:first-child, th:nth-child(2), td:nth-child(2) { text-align: left; }
+    th { color: #b8c8dd; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; background: rgba(255,255,255,.045); }
+    tbody tr { transition: .16s ease; }
+    tbody tr:hover { background: rgba(56,189,248,.08); }
+    .table-wrap { overflow-x: auto; border-radius: var(--radius); }
+    .pass { color: var(--green); font-weight: 900; }
+    .fail { color: var(--red); font-weight: 800; }
+    .pill { padding: 5px 9px; border-radius: 999px; font-size: 12px; font-weight: 800; }
+    .pill.hit { background: rgba(52,211,153,.16); color: #86efac; border: 1px solid rgba(52,211,153,.35); }
+    .pill.miss { background: rgba(251,113,133,.12); color: #fda4af; border: 1px solid rgba(251,113,133,.28); }
+    aside { padding: 22px; }
+    aside h2 { margin: 0 0 10px; font-size: 20px; }
+    .note { color: var(--muted); font-size: 14px; line-height: 1.7; }
+    .mini-list { display: grid; gap: 10px; margin-top: 18px; }
+    .mini { padding: 12px; border-radius: 14px; background: rgba(255,255,255,.045); border: 1px solid var(--line); }
+    .mini strong { display: block; margin-bottom: 4px; }
+    .mini span { color: var(--muted); font-size: 13px; }
+    .toast { position: fixed; right: 24px; bottom: 24px; padding: 14px 18px; border-radius: 16px; background: #0f172a; border: 1px solid var(--line); box-shadow: var(--shadow); opacity: 0; transform: translateY(10px); transition: .2s; }
+    .toast.show { opacity: 1; transform: translateY(0); }
+    @media (max-width: 900px) {
+      body { padding: 18px; }
+      header, .content { grid-template-columns: 1fr; }
+      .stats { grid-template-columns: repeat(2, 1fr); }
+      .toolbar { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="app">
+    <header>
+      <section class="hero">
+        <div class="eyebrow">Stock Screener · Volume / Price / KD</div>
+        <h1>量價 KD 股票篩選系統</h1>
+        <p class="subtitle">自動找出「成交量比昨日多 1 倍以上、價格比昨日上漲 3% 以上、KD 小於 40」的股票。資料來源改為參考 tw-stocks 專案：前端讀取 <b>data.json</b>，後端腳本用 TWSE + yfinance 產生。</p>
+      </section>
+      <section class="rules card">
+        <div class="rule"><span>成交量條件</span><b>今日量 ≥ 昨日量 × 2</b></div>
+        <div class="rule"><span>價格條件</span><b>漲幅 ≥ 3%</b></div>
+        <div class="rule"><span>KD 條件</span><b>K & D 都 &lt; 40</b></div>
+      </section>
+    </header>
+
+    <section class="toolbar card">
+      <input id="search" placeholder="搜尋代號或名稱，例如 2207 / 和泰車" />
+      <button id="toggleAllBtn" title="切換是否顯示未通過股票">顯示全部</button>
+      <label class="file" for="csvFile">匯入 CSV</label>
+      <input id="csvFile" type="file" accept=".csv" />
+      <button class="primary" id="resetBtn">重設範例資料</button>
+    </section>
+
+    <section class="stats">
+      <div class="stat card"><div class="label">總股票數</div><div class="num" id="totalCount">0</div></div>
+      <div class="stat card"><div class="label">符合條件</div><div class="num pass" id="hitCount">0</div></div>
+      <div class="stat card"><div class="label">最高量增倍數</div><div class="num" id="maxVol">0×</div></div>
+      <div class="stat card"><div class="label">平均 KD</div><div class="num" id="avgKd">0</div></div>
+    </section>
+
+    <section class="content">
+      <div class="table-wrap card">
+        <table>
+          <thead>
+            <tr>
+              <th>代號</th><th>名稱</th><th>昨收</th><th>現價</th><th>漲幅</th><th>昨量</th><th>今量</th><th>量增</th><th>K</th><th>D</th><th>結果</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+      <aside class="card">
+        <h2>資料來源</h2>
+        <p class="note">參考你的 tw-stocks 專案做法：網頁端 <b>fetch('data.json')</b>；資料由 <b>scan.py</b> 產生，使用 TWSE MI_INDEX 取得上市行情，再用 yfinance 日線計算昨日量與 KD。</p>
+        <div class="mini-list">
+          <div class="mini"><strong>策略邏輯</strong><span>偏向「低 KD 區的量價啟動」：KD 還沒過熱，但量與價格已經同步轉強。</span></div>
+          <div class="mini"><strong>我的建議</strong><span>這適合當初篩器，不是買進訊號本身。後續可以加上均線、產業別、外資買賣超。</span></div>
+          <div class="mini"><strong>下一版可做</strong><span>串接台股 API、每日自動更新、Discord 通知符合條件清單。</span></div>
+        </div>
+      </aside>
+    </section>
+  </main>
+  <div class="toast" id="toast"></div>
+
+<script>
+const sampleData = [
+  {symbol:'DEMO', name:'範例資料：請先執行 scan.py 產生 data.json', prevClose:100, price:104, prevVolume:1000000, volume:2300000, k:35, d:36}
+];
+let rows = [...sampleData];
+let showAll = false;
+const $ = s => document.querySelector(s);
+function pct(row){ return ((Number(row.price) - Number(row.prevClose)) / Number(row.prevClose)) * 100; }
+function volRatio(row){ return Number(row.volume) / Number(row.prevVolume); }
+function avgKd(row){ return (Number(row.k) + Number(row.d)) / 2; }
+function isHit(row){ return volRatio(row) >= 2 && pct(row) >= 3 && Number(row.k) < 40 && Number(row.d) < 40; }
+function fmt(n, d=1){ return Number(n).toLocaleString('zh-TW', {maximumFractionDigits:d, minimumFractionDigits:d}); }
+function toast(msg){ const el=$('#toast'); el.textContent=msg; el.classList.add('show'); setTimeout(()=>el.classList.remove('show'), 2200); }
+function render(){
+  const q = $('#search').value.trim().toLowerCase();
+  const matched = rows.filter(r => !q || String(r.symbol).toLowerCase().includes(q) || String(r.name).toLowerCase().includes(q));
+  const filtered = showAll ? matched : matched.filter(isHit);
+  $('#toggleAllBtn').textContent = showAll ? '只看通過' : '顯示全部';
+  $('#tbody').innerHTML = filtered.map(r => {
+    const hit = isHit(r);
+    return `<tr>
+      <td><b>${r.symbol}</b></td><td>${r.name}</td><td>${fmt(r.prevClose)}</td><td>${fmt(r.price)}</td>
+      <td class="${pct(r)>=3?'pass':'fail'}">${fmt(pct(r),2)}%</td>
+      <td>${Number(r.prevVolume).toLocaleString('zh-TW')}</td><td>${Number(r.volume).toLocaleString('zh-TW')}</td>
+      <td class="${volRatio(r)>=2?'pass':'fail'}">${fmt(volRatio(r),2)}×</td>
+      <td class="${Number(r.k)<40?'pass':'fail'}">${fmt(r.k,1)}</td>
+      <td class="${Number(r.d)<40?'pass':'fail'}">${fmt(r.d,1)}</td>
+      <td><span class="pill ${hit?'hit':'miss'}">${hit?'符合':'未通過'}</span></td>
+    </tr>`;
+  }).join('') || `<tr><td colspan="11" style="text-align:center;color:#8ea3bf;padding:32px">沒有符合搜尋的資料</td></tr>`;
+  const hits = matched.filter(isHit);
+  $('#totalCount').textContent = matched.length;
+  $('#hitCount').textContent = hits.length;
+  $('#maxVol').textContent = filtered.length ? fmt(Math.max(...filtered.map(volRatio)),1) + '×' : '0×';
+  $('#avgKd').textContent = filtered.length ? fmt(filtered.reduce((s,r)=>s+avgKd(r),0)/filtered.length,1) : '0';
+}
+function parseCsv(text){
+  const lines = text.trim().split(/\r?\n/).filter(Boolean);
+  const headers = lines.shift().split(',').map(h=>h.trim());
+  return lines.map(line => {
+    const cells = line.split(',').map(c=>c.trim());
+    const obj = {};
+    headers.forEach((h,i)=>obj[h]=cells[i]);
+    ['prevClose','price','prevVolume','volume','k','d'].forEach(k=>obj[k]=Number(obj[k]));
+    return obj;
+  }).filter(r => r.symbol && r.name);
+}
+$('#search').addEventListener('input', render);
+$('#toggleAllBtn').addEventListener('click', () => { showAll = !showAll; render(); toast(showAll ? '已切換為顯示全部股票' : '已切換為只顯示通過股票'); });
+$('#resetBtn').addEventListener('click', () => { rows=[...sampleData]; showAll=false; $('#search').value=''; render(); toast('已重設為範例資料'); });
+$('#csvFile').addEventListener('change', async e => {
+  const file = e.target.files[0]; if(!file) return;
+  try {
+    const text = await file.text();
+    rows = parseCsv(text);
+    render(); toast(`已匯入 ${rows.length} 筆資料`);
+  } catch(err) { toast('CSV 解析失敗，請檢查欄位格式'); }
+});
+async function loadRemoteData(){
+  try {
+    const r = await fetch('data.json?' + Date.now());
+    if (!r.ok) throw new Error('data.json not found');
+    const data = await r.json();
+    rows = Array.isArray(data.stocks) ? data.stocks : [];
+    showAll = false;
+    render();
+    toast(`已載入 ${data.date || ''} 真實資料：${rows.length} 檔通過`);
+  } catch (err) {
+    render();
+    toast('尚未找到 data.json，先顯示 DEMO；請執行 python3 scan.py');
+  }
+}
+loadRemoteData();
+</script>
+</body>
+</html>
