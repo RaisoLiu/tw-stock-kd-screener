@@ -1,68 +1,20 @@
 {
-  "date": "20260622",
-  "updated": "2026-06-22 22:01",
+  "date": "20171218",
+  "updated": "2026-06-23 21:30",
   "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
   "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
   "stocks": [
     {
-      "symbol": "2429",
-      "name": "銘旺科",
-      "prevClose": 38.55,
-      "price": 42.3,
-      "prevVolume": 382000,
-      "volume": 1939088,
-      "k": 30.55,
-      "d": 17.69,
-      "risePct": 9.73,
-      "volRatio": 5.08
-    },
-    {
-      "symbol": "6282",
-      "name": "康舒",
-      "prevClose": 58.1,
-      "price": 63.9,
-      "prevVolume": 16948679,
-      "volume": 56918124,
-      "k": 38.72,
-      "d": 29.37,
-      "risePct": 9.98,
-      "volRatio": 3.36
-    },
-    {
-      "symbol": "6768",
-      "name": "志強-KY",
-      "prevClose": 85.7,
-      "price": 88.5,
-      "prevVolume": 352000,
-      "volume": 932801,
-      "k": 19.75,
-      "d": 30.76,
-      "risePct": 3.27,
-      "volRatio": 2.65
-    },
-    {
-      "symbol": "1810",
-      "name": "和成",
-      "prevClose": 19.9,
-      "price": 21.35,
-      "prevVolume": 2157000,
-      "volume": 5485055,
-      "k": 27.83,
-      "d": 30.23,
-      "risePct": 7.29,
-      "volRatio": 2.54
-    },
-    {
-      "symbol": "2421",
-      "name": "建準",
-      "prevClose": 145.0,
-      "price": 150.0,
-      "prevVolume": 2041982,
-      "volume": 4133141,
-      "k": 28.15,
-      "d": 22.96,
-      "risePct": 3.45,
-      "volRatio": 2.02
+      "symbol": "6934",
+      "name": "心誠鎂",
+      "prevClose": 68.7,
+      "price": 71.3,
+      "prevVolume": 89000,
+      "volume": 208403,
+      "k": 17.95,
+      "d": 24.77,
+      "risePct": 3.78,
+      "volRatio": 2.34
     }
   ]
 }
