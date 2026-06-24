@@ -1,20 +1,20 @@
 {
-  "date": "20171218",
-  "updated": "2026-06-23 21:30",
+  "date": "20260624",
+  "updated": "2026-06-24 21:21",
   "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
   "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
   "stocks": [
     {
-      "symbol": "6934",
-      "name": "心誠鎂",
-      "prevClose": 68.7,
-      "price": 71.3,
-      "prevVolume": 89000,
-      "volume": 208403,
-      "k": 17.95,
-      "d": 24.77,
-      "risePct": 3.78,
-      "volRatio": 2.34
+      "symbol": "8101",
+      "name": "華冠",
+      "prevClose": 13.75,
+      "price": 14.2,
+      "prevVolume": 7257,
+      "volume": 22106,
+      "k": 22.61,
+      "d": 24.61,
+      "risePct": 3.27,
+      "volRatio": 3.05
     }
   ]
 }
