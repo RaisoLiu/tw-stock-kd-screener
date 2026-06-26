@@ -1,32 +1,20 @@
 {
-  "date": "20260625",
-  "updated": "2026-06-25 21:29",
+  "date": "20260626",
+  "updated": "2026-06-26 21:16",
   "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
   "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
   "stocks": [
     {
-      "symbol": "7722",
-      "name": "LINEPAY",
-      "prevClose": 301.0,
-      "price": 331.0,
-      "prevVolume": 196251,
-      "volume": 459753,
-      "k": 24.28,
-      "d": 32.67,
-      "risePct": 9.97,
-      "volRatio": 2.34
-    },
-    {
-      "symbol": "2406",
-      "name": "國碩",
-      "prevClose": 34.3,
-      "price": 35.5,
-      "prevVolume": 8875315,
-      "volume": 18884949,
-      "k": 21.62,
-      "d": 29.07,
-      "risePct": 3.5,
-      "volRatio": 2.13
+      "symbol": "3042",
+      "name": "晶技",
+      "prevClose": 187.0,
+      "price": 193.0,
+      "prevVolume": 12443192,
+      "volume": 33105189,
+      "k": 15.18,
+      "d": 26.17,
+      "risePct": 3.21,
+      "volRatio": 2.66
     }
   ]
 }
