@@ -1,20 +1,32 @@
 {
-  "date": "20260626",
-  "updated": "2026-06-28 20:58",
+  "date": "20260629",
+  "updated": "2026-06-29 21:23",
   "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
   "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
   "stocks": [
     {
-      "symbol": "3042",
-      "name": "晶技",
-      "prevClose": 187.0,
-      "price": 193.0,
-      "prevVolume": 12443192,
-      "volume": 33105189,
-      "k": 15.18,
-      "d": 26.17,
-      "risePct": 3.21,
-      "volRatio": 2.66
+      "symbol": "3706",
+      "name": "神達",
+      "prevClose": 83.5,
+      "price": 86.4,
+      "prevVolume": 15303019,
+      "volume": 32056963,
+      "k": 31.66,
+      "d": 30.26,
+      "risePct": 3.47,
+      "volRatio": 2.09
+    },
+    {
+      "symbol": "2365",
+      "name": "昆盈",
+      "prevClose": 31.8,
+      "price": 33.6,
+      "prevVolume": 2871103,
+      "volume": 5928746,
+      "k": 35.04,
+      "d": 29.31,
+      "risePct": 5.66,
+      "volRatio": 2.06
     }
   ]
 }
