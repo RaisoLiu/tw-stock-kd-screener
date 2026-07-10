@@ -1,68 +1,80 @@
 {
   "date": "20260709",
-  "updated": "2026-07-09 21:21",
+  "updated": "2026-07-10 21:04",
   "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
   "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
   "stocks": [
     {
-      "symbol": "2423",
-      "name": "固緯",
-      "prevClose": 72.8,
-      "price": 79.7,
-      "prevVolume": 126001,
-      "volume": 360876,
-      "k": 23.06,
-      "d": 26.85,
-      "risePct": 9.48,
-      "volRatio": 2.86
-    },
-    {
-      "symbol": "6141",
-      "name": "柏承",
-      "prevClose": 35.0,
-      "price": 39.05,
-      "prevVolume": 660167,
-      "volume": 1699218,
-      "k": 23.82,
-      "d": 37.88,
-      "risePct": 11.57,
-      "volRatio": 2.57
-    },
-    {
-      "symbol": "3032",
-      "name": "偉訓",
-      "prevClose": 76.5,
-      "price": 81.4,
-      "prevVolume": 423086,
-      "volume": 989183,
-      "k": 25.32,
-      "d": 29.77,
-      "risePct": 6.41,
-      "volRatio": 2.34
-    },
-    {
       "symbol": "3504",
       "name": "揚明光",
-      "prevClose": 73.4,
+      "prevClose": 74.4,
       "price": 81.8,
-      "prevVolume": 827017,
+      "prevVolume": 588200,
       "volume": 1878006,
-      "k": 11.39,
-      "d": 15.83,
-      "risePct": 11.44,
-      "volRatio": 2.27
+      "k": 36.76,
+      "d": 22.81,
+      "risePct": 9.95,
+      "volRatio": 3.19
     },
     {
-      "symbol": "2388",
-      "name": "威盛",
-      "prevClose": 69.5,
-      "price": 73.1,
-      "prevVolume": 5184978,
-      "volume": 10470533,
-      "k": 33.62,
-      "d": 23.16,
-      "risePct": 5.18,
-      "volRatio": 2.02
+      "symbol": "7788",
+      "name": "松川精密",
+      "prevClose": 242.5,
+      "price": 250.5,
+      "prevVolume": 850109,
+      "volume": 2579844,
+      "k": 27.81,
+      "d": 22.55,
+      "risePct": 3.3,
+      "volRatio": 3.03
+    },
+    {
+      "symbol": "2401",
+      "name": "凌陽",
+      "prevClose": 32.0,
+      "price": 33.0,
+      "prevVolume": 5293006,
+      "volume": 12984131,
+      "k": 35.68,
+      "d": 37.56,
+      "risePct": 3.12,
+      "volRatio": 2.45
+    },
+    {
+      "symbol": "3338",
+      "name": "泰碩",
+      "prevClose": 67.3,
+      "price": 69.5,
+      "prevVolume": 431999,
+      "volume": 1006991,
+      "k": 29.53,
+      "d": 30.19,
+      "risePct": 3.27,
+      "volRatio": 2.33
+    },
+    {
+      "symbol": "4976",
+      "name": "佳凌",
+      "prevClose": 36.75,
+      "price": 38.3,
+      "prevVolume": 1100000,
+      "volume": 2527040,
+      "k": 35.16,
+      "d": 35.32,
+      "risePct": 4.22,
+      "volRatio": 2.3
+    },
+    {
+      "symbol": "6209",
+      "name": "今國光",
+      "prevClose": 78.2,
+      "price": 80.8,
+      "prevVolume": 3937321,
+      "volume": 8056972,
+      "k": 32.16,
+      "d": 20.76,
+      "risePct": 3.32,
+      "volRatio": 2.05
     }
   ]
 }
