@@ -1,7 +1,164 @@
 {
-  "date": "20260714",
-  "updated": "2026-07-14 20:57",
+  "date": "20260715",
+  "updated": "2026-07-15 20:58",
   "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
   "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
-  "stocks": []
+  "stocks": [
+    {
+      "symbol": "2901",
+      "name": "欣欣",
+      "prevClose": 23.55,
+      "price": 24.45,
+      "prevVolume": 6000,
+      "volume": 21509,
+      "k": 13.43,
+      "d": 24.4,
+      "risePct": 3.82,
+      "volRatio": 3.58
+    },
+    {
+      "symbol": "1325",
+      "name": "恆大",
+      "prevClose": 24.25,
+      "price": 25.45,
+      "prevVolume": 133197,
+      "volume": 463696,
+      "k": 25.97,
+      "d": 30.62,
+      "risePct": 4.95,
+      "volRatio": 3.48
+    },
+    {
+      "symbol": "1560",
+      "name": "中砂",
+      "prevClose": 700.0,
+      "price": 742.0,
+      "prevVolume": 698220,
+      "volume": 2353166,
+      "k": 24.59,
+      "d": 31.47,
+      "risePct": 6.0,
+      "volRatio": 3.37
+    },
+    {
+      "symbol": "8499",
+      "name": "鼎炫-KY",
+      "prevClose": 284.5,
+      "price": 302.0,
+      "prevVolume": 40010,
+      "volume": 122551,
+      "k": 17.13,
+      "d": 24.49,
+      "risePct": 6.15,
+      "volRatio": 3.06
+    },
+    {
+      "symbol": "6695",
+      "name": "芯鼎",
+      "prevClose": 54.1,
+      "price": 57.6,
+      "prevVolume": 706319,
+      "volume": 2023018,
+      "k": 13.68,
+      "d": 14.1,
+      "risePct": 6.47,
+      "volRatio": 2.86
+    },
+    {
+      "symbol": "4722",
+      "name": "國精化",
+      "prevClose": 247.0,
+      "price": 274.5,
+      "prevVolume": 856010,
+      "volume": 2274717,
+      "k": 23.8,
+      "d": 20.46,
+      "risePct": 11.13,
+      "volRatio": 2.66
+    },
+    {
+      "symbol": "2915",
+      "name": "潤泰全",
+      "prevClose": 50.4,
+      "price": 52.2,
+      "prevVolume": 3542643,
+      "volume": 9103610,
+      "k": 25.27,
+      "d": 28.01,
+      "risePct": 3.57,
+      "volRatio": 2.57
+    },
+    {
+      "symbol": "3094",
+      "name": "聯傑",
+      "prevClose": 38.4,
+      "price": 40.45,
+      "prevVolume": 2677445,
+      "volume": 6566701,
+      "k": 29.09,
+      "d": 35.58,
+      "risePct": 5.34,
+      "volRatio": 2.45
+    },
+    {
+      "symbol": "2404",
+      "name": "漢唐",
+      "prevClose": 1230.0,
+      "price": 1285.0,
+      "prevVolume": 1512063,
+      "volume": 3675670,
+      "k": 20.17,
+      "d": 24.88,
+      "risePct": 4.47,
+      "volRatio": 2.43
+    },
+    {
+      "symbol": "2337",
+      "name": "旺宏",
+      "prevClose": 138.0,
+      "price": 148.5,
+      "prevVolume": 50877860,
+      "volume": 110280005,
+      "k": 28.33,
+      "d": 23.06,
+      "risePct": 7.61,
+      "volRatio": 2.17
+    },
+    {
+      "symbol": "6243",
+      "name": "迅杰",
+      "prevClose": 36.05,
+      "price": 43.6,
+      "prevVolume": 460127,
+      "volume": 965798,
+      "k": 31.82,
+      "d": 31.33,
+      "risePct": 20.94,
+      "volRatio": 2.1
+    },
+    {
+      "symbol": "1598",
+      "name": "岱宇",
+      "prevClose": 19.2,
+      "price": 19.8,
+      "prevVolume": 88000,
+      "volume": 184223,
+      "k": 30.78,
+      "d": 28.24,
+      "risePct": 3.12,
+      "volRatio": 2.09
+    },
+    {
+      "symbol": "1590",
+      "name": "亞德客-KY",
+      "prevClose": 1320.0,
+      "price": 1365.0,
+      "prevVolume": 496012,
+      "volume": 1023452,
+      "k": 17.19,
+      "d": 22.67,
+      "risePct": 3.41,
+      "volRatio": 2.06
+    }
+  ]
 }
