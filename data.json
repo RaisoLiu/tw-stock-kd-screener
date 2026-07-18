@@ -1,68 +1,7 @@
 {
   "date": "20260717",
-  "updated": "2026-07-17 20:51",
+  "updated": "2026-07-18 20:43",
   "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
   "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
-  "stocks": [
-    {
-      "symbol": "4133",
-      "name": "亞諾法",
-      "prevClose": 20.45,
-      "price": 22.35,
-      "prevVolume": 185603,
-      "volume": 1530488,
-      "k": 24.54,
-      "d": 32.21,
-      "risePct": 9.29,
-      "volRatio": 8.25
-    },
-    {
-      "symbol": "3229",
-      "name": "晟鈦",
-      "prevClose": 36.8,
-      "price": 40.9,
-      "prevVolume": 169219,
-      "volume": 938806,
-      "k": 32.99,
-      "d": 21.98,
-      "risePct": 11.14,
-      "volRatio": 5.55
-    },
-    {
-      "symbol": "9103",
-      "name": "美德醫療-DR",
-      "prevClose": 5.11,
-      "price": 5.28,
-      "prevVolume": 972028,
-      "volume": 4231006,
-      "k": 38.05,
-      "d": 28.89,
-      "risePct": 3.33,
-      "volRatio": 4.35
-    },
-    {
-      "symbol": "2412",
-      "name": "中華電",
-      "prevClose": 133.0,
-      "price": 138.0,
-      "prevVolume": 10569842,
-      "volume": 37689493,
-      "k": 17.74,
-      "d": 10.39,
-      "risePct": 3.76,
-      "volRatio": 3.57
-    },
-    {
-      "symbol": "6715",
-      "name": "嘉基",
-      "prevClose": 374.0,
-      "price": 391.0,
-      "prevVolume": 253180,
-      "volume": 660291,
-      "k": 19.86,
-      "d": 15.42,
-      "risePct": 4.55,
-      "volRatio": 2.61
-    }
-  ]
+  "stocks": []
 }
