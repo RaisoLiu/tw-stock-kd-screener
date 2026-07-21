@@ -1,20 +1,32 @@
 {
-  "date": "20260720",
-  "updated": "2026-07-20 21:09",
+  "date": "20260721",
+  "updated": "2026-07-21 21:05",
   "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
   "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
   "stocks": [
     {
+      "symbol": "3652",
+      "name": "精聯",
+      "prevClose": 29.0,
+      "price": 30.7,
+      "prevVolume": 257230,
+      "volume": 973308,
+      "k": 14.64,
+      "d": 10.13,
+      "risePct": 5.86,
+      "volRatio": 3.78
+    },
+    {
       "symbol": "6928",
       "name": "攸泰科技",
-      "prevClose": 51.5,
-      "price": 54.0,
-      "prevVolume": 219000,
-      "volume": 709002,
-      "k": 16.46,
-      "d": 30.64,
-      "risePct": 4.85,
-      "volRatio": 3.24
+      "prevClose": 49.1,
+      "price": 57.7,
+      "prevVolume": 373000,
+      "volume": 1324762,
+      "k": 27.56,
+      "d": 29.61,
+      "risePct": 17.52,
+      "volRatio": 3.55
     }
   ]
 }
