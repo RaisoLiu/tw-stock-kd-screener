@@ -1,56 +1,32 @@
 {
   "date": "20260724",
-  "updated": "2026-07-24 20:59",
+  "updated": "2026-07-25 20:45",
   "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
   "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
   "stocks": [
     {
-      "symbol": "4977",
-      "name": "眾達-KY",
-      "prevClose": 134.0,
-      "price": 139.0,
-      "prevVolume": 1782540,
-      "volume": 8626255,
-      "k": 37.31,
-      "d": 29.59,
-      "risePct": 3.73,
-      "volRatio": 4.84
+      "symbol": "1538",
+      "name": "正峰",
+      "prevClose": 9.37,
+      "price": 10.0,
+      "prevVolume": 2400,
+      "volume": 12002,
+      "k": 19.56,
+      "d": 17.53,
+      "risePct": 6.72,
+      "volRatio": 5.0
     },
     {
-      "symbol": "3018",
-      "name": "隆銘綠能",
-      "prevClose": 11.9,
-      "price": 13.0,
-      "prevVolume": 35677,
-      "volume": 94017,
-      "k": 27.43,
-      "d": 25.67,
-      "risePct": 9.24,
-      "volRatio": 2.64
-    },
-    {
-      "symbol": "2426",
-      "name": "鼎元",
-      "prevClose": 58.8,
-      "price": 62.0,
-      "prevVolume": 7247120,
-      "volume": 18085589,
-      "k": 28.22,
-      "d": 17.95,
-      "risePct": 5.44,
-      "volRatio": 2.5
-    },
-    {
-      "symbol": "6645",
-      "name": "金萬林-創",
-      "prevClose": 13.35,
-      "price": 13.85,
-      "prevVolume": 34000,
-      "volume": 76000,
-      "k": 11.47,
-      "d": 11.94,
-      "risePct": 3.75,
-      "volRatio": 2.24
+      "symbol": "1530",
+      "name": "亞崴",
+      "prevClose": 27.98,
+      "price": 31.1,
+      "prevVolume": 61606,
+      "volume": 182882,
+      "k": 28.95,
+      "d": 24.29,
+      "risePct": 11.14,
+      "volRatio": 2.97
     }
   ]
 }
