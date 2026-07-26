@@ -1,6 +1,6 @@
 {
   "date": "20260724",
-  "updated": "2026-07-25 20:45",
+  "updated": "2026-07-26 20:53",
   "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
   "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
   "stocks": [
@@ -15,18 +15,6 @@
       "d": 17.53,
       "risePct": 6.72,
       "volRatio": 5.0
-    },
-    {
-      "symbol": "1530",
-      "name": "亞崴",
-      "prevClose": 27.98,
-      "price": 31.1,
-      "prevVolume": 61606,
-      "volume": 182882,
-      "k": 28.95,
-      "d": 24.29,
-      "risePct": 11.14,
-      "volRatio": 2.97
     }
   ]
 }
