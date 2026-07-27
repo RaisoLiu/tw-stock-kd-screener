@@ -1,20 +1,80 @@
 {
-  "date": "20260724",
-  "updated": "2026-07-26 20:53",
+  "date": "20260727",
+  "updated": "2026-07-27 21:08",
   "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
   "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
   "stocks": [
+    {
+      "symbol": "4976",
+      "name": "佳凌",
+      "prevClose": 32.15,
+      "price": 33.9,
+      "prevVolume": 513200,
+      "volume": 2790401,
+      "k": 5.33,
+      "d": 8.78,
+      "risePct": 5.44,
+      "volRatio": 5.44
+    },
+    {
+      "symbol": "6890",
+      "name": "來億-KY",
+      "prevClose": 169.0,
+      "price": 175.5,
+      "prevVolume": 112010,
+      "volume": 570252,
+      "k": 14.9,
+      "d": 12.32,
+      "risePct": 3.85,
+      "volRatio": 5.09
+    },
+    {
+      "symbol": "1414",
+      "name": "東和",
+      "prevClose": 17.75,
+      "price": 18.3,
+      "prevVolume": 150120,
+      "volume": 493722,
+      "k": 22.17,
+      "d": 28.01,
+      "risePct": 3.1,
+      "volRatio": 3.29
+    },
+    {
+      "symbol": "6142",
+      "name": "友勁",
+      "prevClose": 9.72,
+      "price": 10.45,
+      "prevVolume": 946924,
+      "volume": 2823282,
+      "k": 29.17,
+      "d": 28.8,
+      "risePct": 7.51,
+      "volRatio": 2.98
+    },
     {
       "symbol": "1538",
       "name": "正峰",
       "prevClose": 9.37,
       "price": 10.0,
       "prevVolume": 2400,
-      "volume": 12002,
+      "volume": 7002,
       "k": 19.56,
       "d": 17.53,
       "risePct": 6.72,
-      "volRatio": 5.0
+      "volRatio": 2.92
+    },
+    {
+      "symbol": "2484",
+      "name": "希華",
+      "prevClose": 69.4,
+      "price": 73.1,
+      "prevVolume": 18512322,
+      "volume": 50049560,
+      "k": 14.36,
+      "d": 19.01,
+      "risePct": 5.33,
+      "volRatio": 2.7
     }
   ]
 }
