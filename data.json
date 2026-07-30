@@ -1,56 +1,44 @@
 {
-  "date": "20260729",
-  "updated": "2026-07-29 20:52",
+  "date": "20260730",
+  "updated": "2026-07-30 21:04",
   "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
   "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
   "stocks": [
     {
-      "symbol": "4976",
-      "name": "佳凌",
-      "prevClose": 33.9,
-      "price": 37.7,
-      "prevVolume": 2779065,
-      "volume": 13072274,
-      "k": 34.68,
-      "d": 20.08,
-      "risePct": 11.21,
-      "volRatio": 4.7
-    },
-    {
-      "symbol": "6668",
-      "name": "中揚光",
-      "prevClose": 34.7,
-      "price": 37.15,
-      "prevVolume": 903000,
-      "volume": 3025510,
-      "k": 23.71,
-      "d": 21.31,
-      "risePct": 7.06,
-      "volRatio": 3.35
-    },
-    {
-      "symbol": "3504",
-      "name": "揚明光",
-      "prevClose": 65.1,
-      "price": 68.6,
-      "prevVolume": 2079100,
-      "volume": 6588070,
-      "k": 22.42,
-      "d": 20.27,
-      "risePct": 5.38,
-      "volRatio": 3.17
-    },
-    {
-      "symbol": "6671",
-      "name": "三能-KY",
-      "prevClose": 22.4,
-      "price": 23.15,
-      "prevVolume": 14025,
-      "volume": 32160,
-      "k": 24.47,
-      "d": 19.43,
+      "symbol": "8454",
+      "name": "富邦媒",
+      "prevClose": 238.5,
+      "price": 246.5,
+      "prevVolume": 492097,
+      "volume": 2148966,
+      "k": 25.43,
+      "d": 17.0,
       "risePct": 3.35,
-      "volRatio": 2.29
+      "volRatio": 4.37
+    },
+    {
+      "symbol": "3543",
+      "name": "州巧",
+      "prevClose": 27.0,
+      "price": 30.05,
+      "prevVolume": 603150,
+      "volume": 2195412,
+      "k": 14.99,
+      "d": 13.12,
+      "risePct": 11.3,
+      "volRatio": 3.64
+    },
+    {
+      "symbol": "1558",
+      "name": "伸興",
+      "prevClose": 89.2,
+      "price": 91.9,
+      "prevVolume": 101034,
+      "volume": 209716,
+      "k": 27.56,
+      "d": 36.56,
+      "risePct": 3.03,
+      "volRatio": 2.08
     }
   ]
 }
