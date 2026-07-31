@@ -1,44 +1,32 @@
 {
-  "date": "20260730",
-  "updated": "2026-07-30 21:04",
+  "date": "20260731",
+  "updated": "2026-07-31 21:01",
   "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
   "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
   "stocks": [
     {
-      "symbol": "8454",
-      "name": "富邦媒",
-      "prevClose": 238.5,
-      "price": 246.5,
-      "prevVolume": 492097,
-      "volume": 2148966,
-      "k": 25.43,
-      "d": 17.0,
-      "risePct": 3.35,
-      "volRatio": 4.37
+      "symbol": "3023",
+      "name": "信邦",
+      "prevClose": 278.0,
+      "price": 296.0,
+      "prevVolume": 1998128,
+      "volume": 5247334,
+      "k": 16.26,
+      "d": 21.08,
+      "risePct": 6.47,
+      "volRatio": 2.63
     },
     {
-      "symbol": "3543",
-      "name": "州巧",
-      "prevClose": 27.0,
-      "price": 30.05,
-      "prevVolume": 603150,
-      "volume": 2195412,
-      "k": 14.99,
-      "d": 13.12,
-      "risePct": 11.3,
-      "volRatio": 3.64
-    },
-    {
-      "symbol": "1558",
-      "name": "伸興",
-      "prevClose": 89.2,
-      "price": 91.9,
-      "prevVolume": 101034,
-      "volume": 209716,
-      "k": 27.56,
-      "d": 36.56,
-      "risePct": 3.03,
-      "volRatio": 2.08
+      "symbol": "3042",
+      "name": "晶技",
+      "prevClose": 136.5,
+      "price": 149.5,
+      "prevVolume": 11976698,
+      "volume": 24032470,
+      "k": 8.98,
+      "d": 12.86,
+      "risePct": 9.52,
+      "volRatio": 2.01
     }
   ]
 }
