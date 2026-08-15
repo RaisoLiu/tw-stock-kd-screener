@@ -1,92 +1,32 @@
 {
   "date": "20260814",
-  "updated": "2026-08-14 20:27",
+  "updated": "2026-08-15 20:18",
   "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
   "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
   "stocks": [
+    {
+      "symbol": "6243",
+      "name": "迅杰",
+      "prevClose": 43.9,
+      "price": 46.8,
+      "prevVolume": 1153177,
+      "volume": 5229858,
+      "k": 21.83,
+      "d": 20.42,
+      "risePct": 6.61,
+      "volRatio": 4.54
+    },
     {
       "symbol": "2427",
       "name": "三商電",
       "prevClose": 21.75,
       "price": 22.85,
-      "prevVolume": 293185,
+      "prevVolume": 360017,
       "volume": 1600399,
-      "k": 19.97,
-      "d": 21.59,
+      "k": 38.75,
+      "d": 27.31,
       "risePct": 5.06,
-      "volRatio": 5.46
-    },
-    {
-      "symbol": "6477",
-      "name": "安集",
-      "prevClose": 34.25,
-      "price": 38.25,
-      "prevVolume": 930068,
-      "volume": 4939016,
-      "k": 37.12,
-      "d": 35.5,
-      "risePct": 11.68,
-      "volRatio": 5.31
-    },
-    {
-      "symbol": "6243",
-      "name": "迅杰",
-      "prevClose": 44.55,
-      "price": 46.8,
-      "prevVolume": 1022776,
-      "volume": 5229858,
-      "k": 11.69,
-      "d": 19.71,
-      "risePct": 5.05,
-      "volRatio": 5.11
-    },
-    {
-      "symbol": "1102",
-      "name": "亞泥",
-      "prevClose": 32.35,
-      "price": 33.45,
-      "prevVolume": 7085498,
-      "volume": 26219343,
-      "k": 20.89,
-      "d": 30.87,
-      "risePct": 3.4,
-      "volRatio": 3.7
-    },
-    {
-      "symbol": "2429",
-      "name": "銘旺科",
-      "prevClose": 31.25,
-      "price": 34.9,
-      "prevVolume": 320102,
-      "volume": 822170,
-      "k": 37.63,
-      "d": 28.66,
-      "risePct": 11.68,
-      "volRatio": 2.57
-    },
-    {
-      "symbol": "2305",
-      "name": "全友",
-      "prevClose": 27.8,
-      "price": 29.35,
-      "prevVolume": 4082436,
-      "volume": 10186919,
-      "k": 35.59,
-      "d": 29.12,
-      "risePct": 5.58,
-      "volRatio": 2.5
-    },
-    {
-      "symbol": "6464",
-      "name": "台數科",
-      "prevClose": 76.2,
-      "price": 79.0,
-      "prevVolume": 13120,
-      "volume": 28748,
-      "k": 26.17,
-      "d": 36.74,
-      "risePct": 3.67,
-      "volRatio": 2.19
+      "volRatio": 4.45
     }
   ]
 }
