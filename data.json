@@ -1,32 +1,44 @@
 {
-  "date": "20260814",
-  "updated": "2026-08-16 20:17",
+  "date": "20260817",
+  "updated": "2026-08-17 20:22",
   "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
   "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
   "stocks": [
     {
+      "symbol": "2845",
+      "name": "遠東銀",
+      "prevClose": 13.2,
+      "price": 13.6,
+      "prevVolume": 6864440,
+      "volume": 21840543,
+      "k": 20.99,
+      "d": 19.83,
+      "risePct": 3.03,
+      "volRatio": 3.18
+    },
+    {
       "symbol": "6243",
       "name": "迅杰",
       "prevClose": 43.9,
-      "price": 46.8,
+      "price": 45.7,
       "prevVolume": 1153177,
-      "volume": 5229858,
+      "volume": 3147210,
       "k": 21.83,
       "d": 20.42,
-      "risePct": 6.61,
-      "volRatio": 4.54
+      "risePct": 4.1,
+      "volRatio": 2.73
     },
     {
-      "symbol": "2427",
-      "name": "三商電",
-      "prevClose": 21.75,
-      "price": 22.85,
-      "prevVolume": 360017,
-      "volume": 1600399,
-      "k": 38.75,
-      "d": 27.31,
-      "risePct": 5.06,
-      "volRatio": 4.45
+      "symbol": "2723",
+      "name": "美食-KY",
+      "prevClose": 61.1,
+      "price": 63.7,
+      "prevVolume": 362050,
+      "volume": 914200,
+      "k": 27.08,
+      "d": 33.55,
+      "risePct": 4.26,
+      "volRatio": 2.53
     }
   ]
 }
