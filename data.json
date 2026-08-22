@@ -1,116 +1,20 @@
 {
   "date": "20260821",
-  "updated": "2026-08-21 20:20",
+  "updated": "2026-08-22 20:18",
   "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
   "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
   "stocks": [
     {
-      "symbol": "4169",
-      "name": "泰宗",
-      "prevClose": 149.0,
-      "price": 163.0,
-      "prevVolume": 59000,
-      "volume": 401106,
-      "k": 39.1,
-      "d": 20.63,
-      "risePct": 9.4,
-      "volRatio": 6.8
-    },
-    {
-      "symbol": "2722",
-      "name": "夏都",
-      "prevClose": 21.5,
-      "price": 22.45,
-      "prevVolume": 41000,
-      "volume": 228505,
-      "k": 38.48,
-      "d": 37.65,
-      "risePct": 4.42,
-      "volRatio": 5.57
-    },
-    {
-      "symbol": "6919",
-      "name": "康霈*",
-      "prevClose": 102.5,
-      "price": 113.5,
-      "prevVolume": 2074408,
-      "volume": 11255400,
-      "k": 38.22,
-      "d": 36.81,
-      "risePct": 10.73,
-      "volRatio": 5.43
-    },
-    {
-      "symbol": "5871",
-      "name": "中租-KY",
-      "prevClose": 109.5,
-      "price": 115.5,
-      "prevVolume": 2863762,
-      "volume": 9432964,
-      "k": 32.64,
-      "d": 34.15,
-      "risePct": 5.48,
-      "volRatio": 3.29
-    },
-    {
-      "symbol": "1419",
-      "name": "新紡",
-      "prevClose": 63.4,
-      "price": 66.9,
-      "prevVolume": 65004,
-      "volume": 171261,
-      "k": 31.34,
-      "d": 26.37,
-      "risePct": 5.52,
-      "volRatio": 2.63
-    },
-    {
-      "symbol": "2415",
-      "name": "錩新",
-      "prevClose": 29.1,
-      "price": 30.3,
-      "prevVolume": 64035,
-      "volume": 140782,
-      "k": 26.36,
-      "d": 23.34,
-      "risePct": 4.12,
-      "volRatio": 2.2
-    },
-    {
-      "symbol": "6901",
-      "name": "鑽石投資",
-      "prevClose": 16.2,
-      "price": 17.3,
-      "prevVolume": 961232,
-      "volume": 2044834,
-      "k": 32.09,
-      "d": 32.49,
-      "risePct": 6.79,
-      "volRatio": 2.13
-    },
-    {
-      "symbol": "4764",
-      "name": "雙鍵",
-      "prevClose": 201.3,
-      "price": 219.0,
-      "prevVolume": 880063,
-      "volume": 1863227,
-      "k": 15.05,
-      "d": 16.53,
-      "risePct": 8.79,
-      "volRatio": 2.12
-    },
-    {
-      "symbol": "1447",
-      "name": "力鵬",
-      "prevClose": 6.79,
-      "price": 7.18,
-      "prevVolume": 970509,
-      "volume": 2028874,
-      "k": 28.41,
-      "d": 29.62,
-      "risePct": 5.74,
-      "volRatio": 2.09
+      "symbol": "7749",
+      "name": "意騰-KY",
+      "prevClose": 336.5,
+      "price": 347.5,
+      "prevVolume": 79000,
+      "volume": 161432,
+      "k": 37.76,
+      "d": 39.59,
+      "risePct": 3.27,
+      "volRatio": 2.04
     }
   ]
 }
