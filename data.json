@@ -1,20 +1,104 @@
 {
-  "date": "20260821",
-  "updated": "2026-08-23 20:18",
+  "date": "20260824",
+  "updated": "2026-08-24 20:25",
   "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
   "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
   "stocks": [
     {
+      "symbol": "2009",
+      "name": "第一銅",
+      "prevClose": 39.2,
+      "price": 41.9,
+      "prevVolume": 807127,
+      "volume": 8264491,
+      "k": 35.41,
+      "d": 39.13,
+      "risePct": 6.89,
+      "volRatio": 10.24
+    },
+    {
+      "symbol": "3622",
+      "name": "洋華",
+      "prevClose": 48.7,
+      "price": 53.8,
+      "prevVolume": 283000,
+      "volume": 1731467,
+      "k": 19.17,
+      "d": 30.88,
+      "risePct": 10.47,
+      "volRatio": 6.12
+    },
+    {
+      "symbol": "2314",
+      "name": "台揚",
+      "prevClose": 11.1,
+      "price": 11.9,
+      "prevVolume": 64935,
+      "volume": 287289,
+      "k": 7.05,
+      "d": 13.34,
+      "risePct": 7.21,
+      "volRatio": 4.42
+    },
+    {
+      "symbol": "2434",
+      "name": "統懋",
+      "prevClose": 49.05,
+      "price": 53.5,
+      "prevVolume": 263336,
+      "volume": 869326,
+      "k": 14.18,
+      "d": 20.95,
+      "risePct": 9.07,
+      "volRatio": 3.3
+    },
+    {
+      "symbol": "2237",
+      "name": "華德動能-創",
+      "prevClose": 27.0,
+      "price": 28.1,
+      "prevVolume": 123000,
+      "volume": 349237,
+      "k": 38.97,
+      "d": 23.76,
+      "risePct": 4.07,
+      "volRatio": 2.84
+    },
+    {
       "symbol": "7749",
       "name": "意騰-KY",
       "prevClose": 336.5,
-      "price": 347.5,
+      "price": 382.0,
       "prevVolume": 79000,
-      "volume": 161432,
+      "volume": 200415,
       "k": 37.76,
       "d": 39.59,
-      "risePct": 3.27,
-      "volRatio": 2.04
+      "risePct": 13.52,
+      "volRatio": 2.54
+    },
+    {
+      "symbol": "2369",
+      "name": "菱生",
+      "prevClose": 30.9,
+      "price": 32.2,
+      "prevVolume": 3535153,
+      "volume": 8377204,
+      "k": 24.35,
+      "d": 32.66,
+      "risePct": 4.21,
+      "volRatio": 2.37
+    },
+    {
+      "symbol": "6794",
+      "name": "向榮生技",
+      "prevClose": 70.8,
+      "price": 75.0,
+      "prevVolume": 33000,
+      "volume": 67000,
+      "k": 36.45,
+      "d": 27.5,
+      "risePct": 5.93,
+      "volRatio": 2.03
     }
   ]
 }
