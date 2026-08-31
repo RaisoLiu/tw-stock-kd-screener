@@ -1,44 +1,104 @@
 {
-  "date": "20260828",
-  "updated": "2026-08-30 22:20",
+  "date": "20260831",
+  "updated": "2026-08-31 23:36",
   "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
   "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
   "stocks": [
     {
+      "symbol": "2477",
+      "name": "美隆電",
+      "prevClose": 20.8,
+      "price": 21.9,
+      "prevVolume": 105000,
+      "volume": 1284510,
+      "k": 25.42,
+      "d": 21.93,
+      "risePct": 5.29,
+      "volRatio": 12.23
+    },
+    {
+      "symbol": "2885",
+      "name": "元大金",
+      "prevClose": 63.2,
+      "price": 65.4,
+      "prevVolume": 12630903,
+      "volume": 57279554,
+      "k": 30.49,
+      "d": 25.1,
+      "risePct": 3.48,
+      "volRatio": 4.53
+    },
+    {
+      "symbol": "2890",
+      "name": "永豐金",
+      "prevClose": 39.35,
+      "price": 41.1,
+      "prevVolume": 16282310,
+      "volume": 62967549,
+      "k": 38.6,
+      "d": 34.9,
+      "risePct": 4.45,
+      "volRatio": 3.87
+    },
+    {
+      "symbol": "2409",
+      "name": "友達",
+      "prevClose": 25.25,
+      "price": 26.65,
+      "prevVolume": 57869729,
+      "volume": 162039205,
+      "k": 34.17,
+      "d": 33.19,
+      "risePct": 5.54,
+      "volRatio": 2.8
+    },
+    {
+      "symbol": "2543",
+      "name": "皇昌",
+      "prevClose": 38.6,
+      "price": 39.8,
+      "prevVolume": 536316,
+      "volume": 1341149,
+      "k": 34.06,
+      "d": 33.65,
+      "risePct": 3.11,
+      "volRatio": 2.5
+    },
+    {
+      "symbol": "9105",
+      "name": "泰金寶-DR",
+      "prevClose": 8.38,
+      "price": 8.71,
+      "prevVolume": 10723596,
+      "volume": 24519862,
+      "k": 20.0,
+      "d": 24.73,
+      "risePct": 3.94,
+      "volRatio": 2.29
+    },
+    {
       "symbol": "3481",
       "name": "群創",
       "prevClose": 46.25,
-      "price": 48.6,
+      "price": 49.85,
       "prevVolume": 122214226,
-      "volume": 314569251,
+      "volume": 264345359,
       "k": 33.92,
       "d": 28.86,
-      "risePct": 5.08,
-      "volRatio": 2.57
+      "risePct": 7.78,
+      "volRatio": 2.16
     },
     {
-      "symbol": "2939",
-      "name": "永邑-KY",
-      "prevClose": 19.2,
-      "price": 20.0,
-      "prevVolume": 8001,
-      "volume": 19002,
-      "k": 38.72,
-      "d": 39.01,
-      "risePct": 4.17,
-      "volRatio": 2.37
-    },
-    {
-      "symbol": "2237",
-      "name": "華德動能-創",
-      "prevClose": 27.0,
-      "price": 28.0,
-      "prevVolume": 123000,
-      "volume": 289026,
-      "k": 38.97,
-      "d": 23.76,
-      "risePct": 3.7,
-      "volRatio": 2.35
+      "symbol": "2377",
+      "name": "微星",
+      "prevClose": 145.0,
+      "price": 155.0,
+      "prevVolume": 8584221,
+      "volume": 17731986,
+      "k": 34.18,
+      "d": 25.92,
+      "risePct": 6.9,
+      "volRatio": 2.07
     }
   ]
 }
