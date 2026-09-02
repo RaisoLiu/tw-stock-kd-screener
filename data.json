@@ -1,20 +1,20 @@
 {
-  "date": "20260901",
-  "updated": "2026-09-01 22:21",
+  "date": "20260902",
+  "updated": "2026-09-02 22:18",
   "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
   "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
   "stocks": [
     {
-      "symbol": "3018",
-      "name": "隆銘綠能",
-      "prevClose": 11.95,
-      "price": 12.8,
-      "prevVolume": 33001,
-      "volume": 98303,
-      "k": 23.73,
-      "d": 23.8,
-      "risePct": 7.11,
-      "volRatio": 2.98
+      "symbol": "5607",
+      "name": "遠雄港",
+      "prevClose": 51.7,
+      "price": 55.6,
+      "prevVolume": 478324,
+      "volume": 2804398,
+      "k": 32.23,
+      "d": 33.92,
+      "risePct": 7.54,
+      "volRatio": 5.86
     }
   ]
 }
