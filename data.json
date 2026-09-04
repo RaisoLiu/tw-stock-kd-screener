@@ -1,32 +1,80 @@
 {
-  "date": "20260903",
-  "updated": "2026-09-03 22:12",
+  "date": "20260904",
+  "updated": "2026-09-04 22:03",
   "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
   "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
   "stocks": [
     {
-      "symbol": "5608",
-      "name": "四維航",
-      "prevClose": 16.5,
-      "price": 17.45,
-      "prevVolume": 4382684,
-      "volume": 13237460,
-      "k": 27.45,
-      "d": 38.67,
-      "risePct": 5.76,
-      "volRatio": 3.02
+      "symbol": "4807",
+      "name": "日成-KY",
+      "prevClose": 27.55,
+      "price": 28.55,
+      "prevVolume": 62000,
+      "volume": 252786,
+      "k": 37.13,
+      "d": 25.2,
+      "risePct": 3.63,
+      "volRatio": 4.08
     },
     {
-      "symbol": "7610",
-      "name": "聯友金屬-創",
-      "prevClose": 1520.0,
-      "price": 1655.0,
-      "prevVolume": 385808,
-      "volume": 1152011,
-      "k": 35.55,
-      "d": 29.7,
-      "risePct": 8.88,
-      "volRatio": 2.99
+      "symbol": "2923",
+      "name": "鼎固-KY",
+      "prevClose": 23.65,
+      "price": 25.6,
+      "prevVolume": 81000,
+      "volume": 252971,
+      "k": 27.71,
+      "d": 31.19,
+      "risePct": 8.25,
+      "volRatio": 3.12
+    },
+    {
+      "symbol": "2428",
+      "name": "興勤",
+      "prevClose": 244.5,
+      "price": 260.0,
+      "prevVolume": 1057161,
+      "volume": 2467223,
+      "k": 39.06,
+      "d": 33.14,
+      "risePct": 6.34,
+      "volRatio": 2.33
+    },
+    {
+      "symbol": "2375",
+      "name": "凱美",
+      "prevClose": 118.0,
+      "price": 125.0,
+      "prevVolume": 2799542,
+      "volume": 6198270,
+      "k": 31.67,
+      "d": 37.77,
+      "risePct": 5.93,
+      "volRatio": 2.21
+    },
+    {
+      "symbol": "7631",
+      "name": "聚賢研發-創",
+      "prevClose": 141.0,
+      "price": 146.0,
+      "prevVolume": 31000,
+      "volume": 66565,
+      "k": 29.09,
+      "d": 29.25,
+      "risePct": 3.55,
+      "volRatio": 2.15
+    },
+    {
+      "symbol": "1435",
+      "name": "中福",
+      "prevClose": 21.05,
+      "price": 22.0,
+      "prevVolume": 16001,
+      "volume": 33135,
+      "k": 24.34,
+      "d": 22.28,
+      "risePct": 4.51,
+      "volRatio": 2.07
     }
   ]
 }
