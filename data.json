@@ -1,44 +1,32 @@
 {
-  "date": "20260914",
-  "updated": "2026-09-14 22:56",
+  "date": "20260915",
+  "updated": "2026-09-15 22:41",
   "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
   "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
   "stocks": [
     {
-      "symbol": "6668",
-      "name": "中揚光",
-      "prevClose": 39.3,
-      "price": 42.2,
-      "prevVolume": 801220,
-      "volume": 2630633,
-      "k": 27.38,
-      "d": 34.19,
-      "risePct": 7.38,
-      "volRatio": 3.28
+      "symbol": "4771",
+      "name": "望隼",
+      "prevClose": 204.0,
+      "price": 210.5,
+      "prevVolume": 44050,
+      "volume": 193385,
+      "k": 37.03,
+      "d": 34.61,
+      "risePct": 3.19,
+      "volRatio": 4.39
     },
     {
-      "symbol": "6176",
-      "name": "瑞儀",
-      "prevClose": 88.9,
-      "price": 93.6,
-      "prevVolume": 1803004,
-      "volume": 5803862,
-      "k": 37.26,
-      "d": 19.42,
-      "risePct": 5.29,
-      "volRatio": 3.22
-    },
-    {
-      "symbol": "5203",
-      "name": "訊連",
-      "prevClose": 55.8,
-      "price": 57.7,
-      "prevVolume": 69659,
-      "volume": 161856,
-      "k": 31.88,
-      "d": 27.26,
-      "risePct": 3.41,
-      "volRatio": 2.32
+      "symbol": "2546",
+      "name": "根基",
+      "prevClose": 102.0,
+      "price": 105.5,
+      "prevVolume": 102053,
+      "volume": 238982,
+      "k": 28.85,
+      "d": 24.21,
+      "risePct": 3.43,
+      "volRatio": 2.34
     }
   ]
 }
