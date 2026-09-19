@@ -1,6 +1,6 @@
 {
   "date": "20260918",
-  "updated": "2026-09-18 22:14",
+  "updated": "2026-09-19 22:04",
   "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
   "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
   "stocks": [
@@ -291,6 +291,18 @@
       "d": 17.33,
       "risePct": 4.44,
       "volRatio": 2.22
+    },
+    {
+      "symbol": "0053",
+      "name": "元大電子",
+      "prevClose": 239.5,
+      "price": 246.8,
+      "prevVolume": 44029,
+      "volume": 91819,
+      "k": 24.85,
+      "d": 32.6,
+      "risePct": 3.05,
+      "volRatio": 2.09
     }
   ]
 }
