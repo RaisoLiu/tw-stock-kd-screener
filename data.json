@@ -1,20 +1,44 @@
 {
-  "date": "20260918",
-  "updated": "2026-09-20 22:09",
+  "date": "20260921",
+  "updated": "2026-09-21 22:59",
   "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
   "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
   "stocks": [
     {
-      "symbol": "6184",
-      "name": "大豐電",
-      "prevClose": 39.55,
-      "price": 40.8,
-      "prevVolume": 150000,
-      "volume": 791994,
-      "k": 32.18,
-      "d": 27.45,
-      "risePct": 3.16,
-      "volRatio": 5.28
+      "symbol": "0053",
+      "name": "元大電子",
+      "prevClose": 241.95,
+      "price": 249.3,
+      "prevVolume": 24046,
+      "volume": 157983,
+      "k": 36.01,
+      "d": 33.74,
+      "risePct": 3.04,
+      "volRatio": 6.57
+    },
+    {
+      "symbol": "1721",
+      "name": "國慶科技",
+      "prevClose": 22.0,
+      "price": 24.2,
+      "prevVolume": 658050,
+      "volume": 2190831,
+      "k": 34.68,
+      "d": 35.07,
+      "risePct": 10.0,
+      "volRatio": 3.33
+    },
+    {
+      "symbol": "1598",
+      "name": "岱宇",
+      "prevClose": 20.0,
+      "price": 20.85,
+      "prevVolume": 150417,
+      "volume": 329897,
+      "k": 30.75,
+      "d": 32.15,
+      "risePct": 4.25,
+      "volRatio": 2.19
     }
   ]
 }
