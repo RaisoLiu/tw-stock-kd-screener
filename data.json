@@ -1,44 +1,7 @@
 {
-  "date": "20260930",
-  "updated": "2026-09-30 23:24",
+  "date": "20261001",
+  "updated": "2026-10-01 23:40",
   "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
   "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
-  "stocks": [
-    {
-      "symbol": "6477",
-      "name": "安集",
-      "prevClose": 34.1,
-      "price": 35.6,
-      "prevVolume": 228022,
-      "volume": 2304661,
-      "k": 31.77,
-      "d": 29.03,
-      "risePct": 4.4,
-      "volRatio": 10.11
-    },
-    {
-      "symbol": "4763",
-      "name": "材料*-KY",
-      "prevClose": 46.85,
-      "price": 48.9,
-      "prevVolume": 4530340,
-      "volume": 11831200,
-      "k": 33.73,
-      "d": 34.46,
-      "risePct": 4.38,
-      "volRatio": 2.61
-    },
-    {
-      "symbol": "6573",
-      "name": "虹揚-KY",
-      "prevClose": 15.9,
-      "price": 16.45,
-      "prevVolume": 76000,
-      "volume": 186907,
-      "k": 37.79,
-      "d": 36.04,
-      "risePct": 3.46,
-      "volRatio": 2.46
-    }
-  ]
+  "stocks": []
 }
