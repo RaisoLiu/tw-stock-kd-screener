@@ -1,7 +1,68 @@
 {
-  "date": "20261001",
-  "updated": "2026-10-01 23:40",
+  "date": "20261002",
+  "updated": "2026-10-02 23:32",
   "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
   "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
-  "stocks": []
+  "stocks": [
+    {
+      "symbol": "2321",
+      "name": "東訊",
+      "prevClose": 23.5,
+      "price": 25.85,
+      "prevVolume": 3100,
+      "volume": 39872,
+      "k": 32.06,
+      "d": 32.97,
+      "risePct": 10.0,
+      "volRatio": 12.86
+    },
+    {
+      "symbol": "2338",
+      "name": "光罩",
+      "prevClose": 47.2,
+      "price": 49.65,
+      "prevVolume": 2722433,
+      "volume": 15644706,
+      "k": 38.58,
+      "d": 35.0,
+      "risePct": 5.19,
+      "volRatio": 5.75
+    },
+    {
+      "symbol": "6451",
+      "name": "訊芯-KY",
+      "prevClose": 413.0,
+      "price": 429.0,
+      "prevVolume": 820480,
+      "volume": 2590932,
+      "k": 37.54,
+      "d": 38.44,
+      "risePct": 3.87,
+      "volRatio": 3.16
+    },
+    {
+      "symbol": "6830",
+      "name": "汎銓",
+      "prevClose": 531.0,
+      "price": 547.0,
+      "prevVolume": 762677,
+      "volume": 1744163,
+      "k": 35.94,
+      "d": 35.24,
+      "risePct": 3.01,
+      "volRatio": 2.29
+    },
+    {
+      "symbol": "2606",
+      "name": "裕民",
+      "prevClose": 73.5,
+      "price": 75.9,
+      "prevVolume": 1714375,
+      "volume": 3649164,
+      "k": 31.55,
+      "d": 31.35,
+      "risePct": 3.27,
+      "volRatio": 2.13
+    }
+  ]
 }
