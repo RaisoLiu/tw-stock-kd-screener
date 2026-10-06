@@ -1,56 +1,32 @@
 {
-  "date": "20261005",
-  "updated": "2026-10-06 01:06",
+  "date": "20261006",
+  "updated": "2026-10-06 23:32",
   "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
   "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
   "stocks": [
     {
-      "symbol": "2413",
-      "name": "環科",
-      "prevClose": 52.3,
-      "price": 55.3,
-      "prevVolume": 1924100,
-      "volume": 8344142,
-      "k": 36.17,
-      "d": 35.56,
-      "risePct": 5.74,
-      "volRatio": 4.34
+      "symbol": "9103",
+      "name": "美德醫療-DR",
+      "prevClose": 4.89,
+      "price": 5.08,
+      "prevVolume": 818000,
+      "volume": 3855045,
+      "k": 29.0,
+      "d": 21.97,
+      "risePct": 3.89,
+      "volRatio": 4.71
     },
     {
-      "symbol": "8210",
-      "name": "勤誠",
-      "prevClose": 841.0,
-      "price": 890.0,
-      "prevVolume": 1504916,
-      "volume": 5109884,
-      "k": 37.55,
-      "d": 29.49,
-      "risePct": 5.83,
-      "volRatio": 3.4
-    },
-    {
-      "symbol": "3023",
-      "name": "信邦",
-      "prevClose": 312.0,
-      "price": 322.5,
-      "prevVolume": 719432,
-      "volume": 1582254,
-      "k": 37.14,
-      "d": 23.03,
-      "risePct": 3.37,
-      "volRatio": 2.2
-    },
-    {
-      "symbol": "7610",
-      "name": "聯友金屬-創",
-      "prevClose": 1725.0,
-      "price": 1800.0,
-      "prevVolume": 579120,
-      "volume": 1256506,
-      "k": 30.16,
-      "d": 34.96,
-      "risePct": 4.35,
-      "volRatio": 2.17
+      "symbol": "2605",
+      "name": "新興",
+      "prevClose": 35.15,
+      "price": 36.95,
+      "prevVolume": 5633445,
+      "volume": 18807859,
+      "k": 34.29,
+      "d": 29.23,
+      "risePct": 5.12,
+      "volRatio": 3.34
     }
   ]
 }
