@@ -1,80 +1,20 @@
 {
-  "date": "20261007",
-  "updated": "2026-10-08 00:00",
+  "date": "20261008",
+  "updated": "2026-10-09 00:08",
   "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
   "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
   "stocks": [
     {
-      "symbol": "1444",
-      "name": "力麗",
-      "prevClose": 6.78,
-      "price": 6.99,
-      "prevVolume": 595232,
-      "volume": 3245486,
-      "k": 32.88,
-      "d": 36.4,
-      "risePct": 3.1,
-      "volRatio": 5.45
-    },
-    {
-      "symbol": "1808",
-      "name": "潤隆",
-      "prevClose": 31.35,
-      "price": 32.35,
-      "prevVolume": 469503,
-      "volume": 1998944,
-      "k": 23.54,
-      "d": 15.62,
-      "risePct": 3.19,
-      "volRatio": 4.26
-    },
-    {
-      "symbol": "2439",
-      "name": "美律",
-      "prevClose": 75.2,
-      "price": 78.7,
-      "prevVolume": 1112538,
-      "volume": 4148169,
-      "k": 38.94,
-      "d": 34.04,
-      "risePct": 4.65,
-      "volRatio": 3.73
-    },
-    {
-      "symbol": "1447",
-      "name": "力鵬",
-      "prevClose": 6.39,
-      "price": 6.62,
-      "prevVolume": 434612,
-      "volume": 1514190,
-      "k": 31.98,
-      "d": 32.97,
-      "risePct": 3.6,
-      "volRatio": 3.48
-    },
-    {
-      "symbol": "2489",
-      "name": "瑞軒",
-      "prevClose": 39.4,
-      "price": 41.4,
-      "prevVolume": 11265426,
-      "volume": 25774712,
-      "k": 30.38,
-      "d": 30.36,
-      "risePct": 5.08,
-      "volRatio": 2.29
-    },
-    {
-      "symbol": "7740",
-      "name": "熙特爾-創",
-      "prevClose": 100.5,
-      "price": 108.0,
-      "prevVolume": 186659,
-      "volume": 409121,
-      "k": 15.6,
-      "d": 9.89,
-      "risePct": 7.46,
-      "volRatio": 2.19
+      "symbol": "2906",
+      "name": "高林",
+      "prevClose": 13.3,
+      "price": 14.1,
+      "prevVolume": 37229,
+      "volume": 610377,
+      "k": 39.17,
+      "d": 27.28,
+      "risePct": 6.02,
+      "volRatio": 16.4
     }
   ]
 }
