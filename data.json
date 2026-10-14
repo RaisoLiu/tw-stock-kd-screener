@@ -1,56 +1,44 @@
 {
-  "date": "20261013",
-  "updated": "2026-10-13 23:35",
+  "date": "20261014",
+  "updated": "2026-10-14 22:58",
   "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
   "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
   "stocks": [
     {
-      "symbol": "1225",
-      "name": "福懋油",
-      "prevClose": 24.1,
-      "price": 24.85,
-      "prevVolume": 11002,
-      "volume": 312482,
-      "k": 36.13,
-      "d": 27.11,
-      "risePct": 3.11,
-      "volRatio": 28.4
+      "symbol": "7835",
+      "name": "永悅健康-創",
+      "prevClose": 19.85,
+      "price": 20.8,
+      "prevVolume": 5000,
+      "volume": 47274,
+      "k": 32.39,
+      "d": 20.36,
+      "risePct": 4.79,
+      "volRatio": 9.45
     },
     {
-      "symbol": "4426",
-      "name": "利勤",
-      "prevClose": 7.61,
-      "price": 7.86,
-      "prevVolume": 122000,
-      "volume": 567518,
-      "k": 36.36,
-      "d": 28.37,
-      "risePct": 3.29,
-      "volRatio": 4.65
+      "symbol": "1528",
+      "name": "恩德",
+      "prevClose": 22.65,
+      "price": 24.9,
+      "prevVolume": 2018002,
+      "volume": 8310075,
+      "k": 30.35,
+      "d": 20.19,
+      "risePct": 9.93,
+      "volRatio": 4.12
     },
     {
-      "symbol": "3034",
-      "name": "聯詠",
-      "prevClose": 529.0,
-      "price": 546.0,
-      "prevVolume": 1419696,
-      "volume": 4244084,
-      "k": 37.27,
-      "d": 32.53,
-      "risePct": 3.21,
-      "volRatio": 2.99
-    },
-    {
-      "symbol": "2465",
-      "name": "麗臺",
-      "prevClose": 83.9,
-      "price": 89.4,
-      "prevVolume": 1498470,
-      "volume": 3517158,
-      "k": 36.35,
-      "d": 36.85,
-      "risePct": 6.56,
-      "volRatio": 2.35
+      "symbol": "3576",
+      "name": "聯合再生",
+      "prevClose": 17.8,
+      "price": 18.65,
+      "prevVolume": 6296146,
+      "volume": 15937197,
+      "k": 27.66,
+      "d": 34.03,
+      "risePct": 4.78,
+      "volRatio": 2.53
     }
   ]
 }
