@@ -1,44 +1,20 @@
 {
-  "date": "20261014",
-  "updated": "2026-10-14 22:58",
+  "date": "20261015",
+  "updated": "2026-10-15 22:52",
   "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
   "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
   "stocks": [
     {
-      "symbol": "7835",
-      "name": "永悅健康-創",
-      "prevClose": 19.85,
-      "price": 20.8,
-      "prevVolume": 5000,
-      "volume": 47274,
-      "k": 32.39,
-      "d": 20.36,
-      "risePct": 4.79,
-      "volRatio": 9.45
-    },
-    {
-      "symbol": "1528",
-      "name": "恩德",
-      "prevClose": 22.65,
-      "price": 24.9,
-      "prevVolume": 2018002,
-      "volume": 8310075,
-      "k": 30.35,
-      "d": 20.19,
-      "risePct": 9.93,
-      "volRatio": 4.12
-    },
-    {
-      "symbol": "3576",
-      "name": "聯合再生",
-      "prevClose": 17.8,
-      "price": 18.65,
-      "prevVolume": 6296146,
-      "volume": 15937197,
-      "k": 27.66,
-      "d": 34.03,
-      "risePct": 4.78,
-      "volRatio": 2.53
+      "symbol": "2380",
+      "name": "虹光",
+      "prevClose": 15.6,
+      "price": 17.15,
+      "prevVolume": 44632,
+      "volume": 273588,
+      "k": 39.46,
+      "d": 24.57,
+      "risePct": 9.94,
+      "volRatio": 6.13
     }
   ]
 }
