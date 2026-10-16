@@ -1,20 +1,20 @@
 {
-  "date": "20261015",
-  "updated": "2026-10-15 22:52",
+  "date": "20261016",
+  "updated": "2026-10-16 22:27",
   "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
   "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
   "stocks": [
     {
-      "symbol": "2380",
-      "name": "虹光",
-      "prevClose": 15.6,
-      "price": 17.15,
-      "prevVolume": 44632,
-      "volume": 273588,
-      "k": 39.46,
-      "d": 24.57,
-      "risePct": 9.94,
-      "volRatio": 6.13
+      "symbol": "2413",
+      "name": "環科",
+      "prevClose": 50.9,
+      "price": 55.5,
+      "prevVolume": 1530161,
+      "volume": 3801764,
+      "k": 31.07,
+      "d": 33.77,
+      "risePct": 9.04,
+      "volRatio": 2.48
     }
   ]
 }
