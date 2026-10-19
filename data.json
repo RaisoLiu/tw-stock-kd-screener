@@ -1,20 +1,92 @@
 {
-  "date": "20261016",
-  "updated": "2026-10-18 22:11",
+  "date": "20261019",
+  "updated": "2026-10-19 23:17",
   "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
   "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
   "stocks": [
     {
-      "symbol": "2413",
-      "name": "環科",
-      "prevClose": 50.9,
-      "price": 55.5,
-      "prevVolume": 1530161,
-      "volume": 3801764,
-      "k": 31.07,
-      "d": 33.77,
-      "risePct": 9.04,
-      "volRatio": 2.48
+      "symbol": "6695",
+      "name": "芯鼎",
+      "prevClose": 48.85,
+      "price": 51.0,
+      "prevVolume": 288042,
+      "volume": 2490017,
+      "k": 27.28,
+      "d": 22.55,
+      "risePct": 4.4,
+      "volRatio": 8.64
+    },
+    {
+      "symbol": "3027",
+      "name": "盛達",
+      "prevClose": 18.55,
+      "price": 19.35,
+      "prevVolume": 113002,
+      "volume": 546504,
+      "k": 24.73,
+      "d": 26.81,
+      "risePct": 4.31,
+      "volRatio": 4.84
+    },
+    {
+      "symbol": "6657",
+      "name": "華安",
+      "prevClose": 32.65,
+      "price": 34.75,
+      "prevVolume": 87000,
+      "volume": 284149,
+      "k": 38.8,
+      "d": 36.25,
+      "risePct": 6.43,
+      "volRatio": 3.27
+    },
+    {
+      "symbol": "7740",
+      "name": "熙特爾-創",
+      "prevClose": 102.0,
+      "price": 110.5,
+      "prevVolume": 105000,
+      "volume": 320594,
+      "k": 20.99,
+      "d": 21.76,
+      "risePct": 8.33,
+      "volRatio": 3.05
+    },
+    {
+      "symbol": "1541",
+      "name": "錩泰",
+      "prevClose": 19.65,
+      "price": 20.35,
+      "prevVolume": 11000,
+      "volume": 31005,
+      "k": 28.94,
+      "d": 18.29,
+      "risePct": 3.56,
+      "volRatio": 2.82
+    },
+    {
+      "symbol": "6698",
+      "name": "旭暉應材",
+      "prevClose": 30.5,
+      "price": 31.5,
+      "prevVolume": 97343,
+      "volume": 207429,
+      "k": 34.15,
+      "d": 27.62,
+      "risePct": 3.28,
+      "volRatio": 2.13
+    },
+    {
+      "symbol": "1809",
+      "name": "中釉",
+      "prevClose": 41.8,
+      "price": 43.75,
+      "prevVolume": 1303400,
+      "volume": 2692420,
+      "k": 31.9,
+      "d": 33.76,
+      "risePct": 4.67,
+      "volRatio": 2.07
     }
   ]
 }
