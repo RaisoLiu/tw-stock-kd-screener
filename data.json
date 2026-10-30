@@ -1,44 +1,7 @@
 {
-  "date": "20261029",
-  "updated": "2026-10-29 23:46",
+  "date": "20261030",
+  "updated": "2026-10-30 23:27",
   "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
   "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
-  "stocks": [
-    {
-      "symbol": "6873",
-      "name": "泓德能源",
-      "prevClose": 46.55,
-      "price": 50.0,
-      "prevVolume": 522651,
-      "volume": 3710765,
-      "k": 10.8,
-      "d": 15.94,
-      "risePct": 7.41,
-      "volRatio": 7.1
-    },
-    {
-      "symbol": "2421",
-      "name": "建準",
-      "prevClose": 154.5,
-      "price": 159.5,
-      "prevVolume": 908600,
-      "volume": 2653769,
-      "k": 24.78,
-      "d": 18.82,
-      "risePct": 3.24,
-      "volRatio": 2.92
-    },
-    {
-      "symbol": "6446",
-      "name": "藥華藥",
-      "prevClose": 1200.0,
-      "price": 1240.0,
-      "prevVolume": 1033578,
-      "volume": 2113054,
-      "k": 36.2,
-      "d": 26.81,
-      "risePct": 3.33,
-      "volRatio": 2.04
-    }
-  ]
+  "stocks": []
 }
