@@ -1,7 +1,32 @@
 {
-  "date": "20261102",
-  "updated": "2026-11-03 01:58",
+  "date": "20261103",
+  "updated": "2026-11-04 00:21",
   "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
   "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
-  "stocks": []
+  "stocks": [
+    {
+      "symbol": "1802",
+      "name": "台玻",
+      "prevClose": 63.7,
+      "price": 67.7,
+      "prevVolume": 79207606,
+      "volume": 301314439,
+      "k": 39.56,
+      "d": 37.14,
+      "risePct": 6.28,
+      "volRatio": 3.8
+    },
+    {
+      "symbol": "9103",
+      "name": "美德醫療-DR",
+      "prevClose": 5.16,
+      "price": 5.34,
+      "prevVolume": 587000,
+      "volume": 1806507,
+      "k": 14.82,
+      "d": 13.32,
+      "risePct": 3.49,
+      "volRatio": 3.08
+    }
+  ]
 }
