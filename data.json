@@ -1,56 +1,7 @@
 {
-  "date": "20261106",
-  "updated": "2026-11-08 23:24",
+  "date": "20261109",
+  "updated": "2026-11-10 02:31",
   "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
   "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
-  "stocks": [
-    {
-      "symbol": "1558",
-      "name": "伸興",
-      "prevClose": 103.5,
-      "price": 113.0,
-      "prevVolume": 129201,
-      "volume": 1196149,
-      "k": 36.82,
-      "d": 25.33,
-      "risePct": 9.18,
-      "volRatio": 9.26
-    },
-    {
-      "symbol": "9928",
-      "name": "中視",
-      "prevClose": 15.85,
-      "price": 16.8,
-      "prevVolume": 72041,
-      "volume": 495933,
-      "k": 32.17,
-      "d": 22.74,
-      "risePct": 5.99,
-      "volRatio": 6.88
-    },
-    {
-      "symbol": "8271",
-      "name": "宇瞻",
-      "prevClose": 159.5,
-      "price": 167.0,
-      "prevVolume": 1034436,
-      "volume": 3841907,
-      "k": 25.26,
-      "d": 23.88,
-      "risePct": 4.7,
-      "volRatio": 3.71
-    },
-    {
-      "symbol": "6947",
-      "name": "台鎔科技",
-      "prevClose": 56.6,
-      "price": 62.1,
-      "prevVolume": 210143,
-      "volume": 665317,
-      "k": 28.65,
-      "d": 20.6,
-      "risePct": 9.72,
-      "volRatio": 3.17
-    }
-  ]
+  "stocks": []
 }
