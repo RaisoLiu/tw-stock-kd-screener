@@ -1,7 +1,80 @@
 {
-  "date": "20261111",
-  "updated": "2026-11-12 01:47",
+  "date": "20261112",
+  "updated": "2026-11-13 00:52",
   "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
   "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
-  "stocks": []
+  "stocks": [
+    {
+      "symbol": "6908",
+      "name": "宏碁遊戲-創",
+      "prevClose": 20.55,
+      "price": 22.6,
+      "prevVolume": 5000,
+      "volume": 90885,
+      "k": 31.8,
+      "d": 21.36,
+      "risePct": 9.98,
+      "volRatio": 18.18
+    },
+    {
+      "symbol": "6614",
+      "name": "資拓宏宇",
+      "prevClose": 31.7,
+      "price": 33.5,
+      "prevVolume": 46978,
+      "volume": 267996,
+      "k": 25.09,
+      "d": 20.42,
+      "risePct": 5.68,
+      "volRatio": 5.7
+    },
+    {
+      "symbol": "4414",
+      "name": "如興",
+      "prevClose": 7.26,
+      "price": 7.51,
+      "prevVolume": 248904,
+      "volume": 695949,
+      "k": 29.01,
+      "d": 21.43,
+      "risePct": 3.44,
+      "volRatio": 2.8
+    },
+    {
+      "symbol": "2438",
+      "name": "翔耀",
+      "prevClose": 17.05,
+      "price": 17.6,
+      "prevVolume": 32000,
+      "volume": 83040,
+      "k": 34.83,
+      "d": 28.8,
+      "risePct": 3.23,
+      "volRatio": 2.6
+    },
+    {
+      "symbol": "4169",
+      "name": "泰宗",
+      "prevClose": 116.5,
+      "price": 121.0,
+      "prevVolume": 115000,
+      "volume": 256178,
+      "k": 20.03,
+      "d": 16.49,
+      "risePct": 3.86,
+      "volRatio": 2.23
+    },
+    {
+      "symbol": "4720",
+      "name": "德淵",
+      "prevClose": 27.6,
+      "price": 29.1,
+      "prevVolume": 7946299,
+      "volume": 17244155,
+      "k": 26.33,
+      "d": 30.02,
+      "risePct": 5.43,
+      "volRatio": 2.17
+    }
+  ]
 }
