@@ -1,6 +1,6 @@
 {
-  "date": "20261117",
-  "updated": "2026-11-18 02:02",
+  "date": "20261118",
+  "updated": "2026-11-19 01:39",
   "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
   "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
   "stocks": []
