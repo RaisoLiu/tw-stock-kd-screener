@@ -1,20 +1,7 @@
 {
-  "date": "20261119",
-  "updated": "2026-11-20 01:38",
+  "date": "20261120",
+  "updated": "2026-11-21 01:03",
   "source": "TWSE MI_INDEX + yfinance daily OHLCV, same style as ai-tools-sharing-talk/tw-stocks daily_scan.py",
   "rules": "今日成交量 >= 昨日成交量×2 + 今日價格較昨日收盤 >= 3% + K<40 + D<40",
-  "stocks": [
-    {
-      "symbol": "1441",
-      "name": "大東",
-      "prevClose": 8.6,
-      "price": 8.99,
-      "prevVolume": 6000,
-      "volume": 29665,
-      "k": 32.62,
-      "d": 19.75,
-      "risePct": 4.53,
-      "volRatio": 4.94
-    }
-  ]
+  "stocks": []
 }
